@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!--begin meta-->
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+
+<!--styles-->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600|Bitter:400,400italic,700" rel="stylesheet" type="text/css"/>  <!--google font-->
+<link href="css/flexslider.css" rel="stylesheet" type="text/css"/>  <!--flexslider css-->
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="all"/>
+
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>  <!--flexslider js-->
+<script>
+	$(document).ready(function() {
+		$('.flexslider').flexslider();
+		$("#toggle").click(function() {
+			$("#navigation").toggle();
+		});
+	});
+</script>
+
+<title>Skin Surgery Center: Procedures &amp; Services</title>
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.php"><img id="logo" src="images/logo.png" alt="logo"></a>
+
+<a href="index.php"><img id="logo-mobile" src="images/logo-mobile.png" alt="logo mobile"></a>
+
+<div id="portal">
+<a href="#">Patient Portal: Login</a>
+</div>  <!--end portal-->
+
+<!--start toggle -->
+<img id="toggle" src="images/toggle.png" alt="Toggle Menu">
+<!--end toggle -->
+
+</header>
+<!--MAIN NAV-->
+
+
+<nav id="navigation">
+    <ul id="main-menu">
+    	<li class="mobile"><a href="#">Patient Portal: Login</a></li>
+        <li class="sm nav"><a href="#">About Us</a>
+        	<ul class="sub-menu">
+        		<li><a href="#">Mission</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Physicians</a></li>
+                <li><a href="#">Physician Assistants</a></li>
+                <li><a href="#">Staff</a></li>
+            </ul>  <!--end sub-menu-->
+        </li>
+        <li class="lg nav"><a href="main.html">Procedures &amp; Services</a>
+        	<ul class="sub-menu">
+        		<li><a href="#">Skin Exams &amp; Biopsies</a></li>
+                <li><a href="#">Photodynamic Therapy (Blue Light)</a></li>
+                <li><a href="#">Surgical Procedures</a></li>
+            </ul>  <!--end sub-menu-->
+        </li>
+        <li class="med nav"><a href="#">Educational Info</a>
+            <ul class="sub-menu">
+        		<li><a href="#">ABCDEs of Skin Cancer</a></li>
+                <li><a href="#">Glossary of Terms</a></li>
+                <li><a href="#">Skin Cancer Myths</a></li>
+                <li><a href="#">6 Skin Types</a></li>
+                <li><a href="#">Self Examination</a></li>
+                <li><a href="#">Sun Safety</a></li>
+            </ul>  <!--end sub-menu-->
+		</li>
+        <li class="med nav"><a href="#">Patient Resources</a>
+        	<ul class="sub-menu">
+        		<li><a href="#">Patient Forms &amp; Notices</a></li>
+                <li><a href="#">Insurance Information</a></li>
+                <li><a href="#">Cancellation &amp; Missed Appointment Policy</a></li>
+            </ul>  <!--end sub-menu-->
+        </li>
+        <li class="sm nav"><a href="#">Contact Us</a>
+        	<ul class="sub-menu">
+        		<li><a href="#">Seattle</a></li>
+                <li><a href="#">Bellevue</a></li>
+            </ul>  <!--end sub-menu-->
+        </li>
+    </ul>
+</nav>
+
+<div id="wrapper">
+<main class="inner procedures-services">
+
+<h1>Procedures &amp; Services</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. Ut sodales nisl in felis suscipit in sollicitudin metus varius. </p>
+
+<h2><a href="#">Skin Exams &amp; Biopsies</a></h2>
+<img class="thumb" src="images/exam-thumb.jpg" alt="skin exam">
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer lectus turpis, venenatis quis sodales vitae, adipiscing ac dolor. Pellentesque rhoncus, ligula vitae blandit volutpat, arcu enim vehicula risus, at facilisis turpis turpis eget odio. Duis faucibus sodales pretium. Etiam suscipit magna metus. Aliquam vitae imperdiet est.</p>
+<div class="learn-more"><h4><a href="#">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+<h2><a href="#">Photodynamic Therapy (Blue Light)</a></h2>
+<img class="thumb" src="images/pdt-thumb.jpg" alt="PDT">
+<p>In a metus neque. Donec sed est metus, in cursus lectus. Aliquam vel aliquam ante. Curabitur non libero ut ipsum eleifend cursus. Sed rutrum sagittis pulvinar. Suspendisse potenti. Maecenas ut sapien nisi. Ut accumsan varius ornare. Quisque euismod sapien ut erat fermentum sed viverra nibh congue. Sed at metus est.</p>
+<div class="learn-more"><h4><a href="#">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+<h2><a href="#">Surgical Procedures</a></h2>
+<img class="thumb" src="images/surgery-thumb.jpg" alt="surgery">
+<p>Donec feugiat iaculis nibh sit amet varius. Sed laoreet justo vitae magna dignissim gravida. Nunc nec odio ligula, eget ultrices quam. Nulla commodo viverra magna a gravida. Ut rhoncus massa at nisi sollicitudin quis tincidunt dolor aliquam. Mauris vitae sagittis nunc. Integer sodales, magna sit amet laoreet laoreet, elit leo sollicitudin augue, nec pretium lacus purus et quam.</p>
+<div class="learn-more"><h4><a href="#">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+</main>
+
+<aside class="procedures-services">
+
+<h3><a href="#">About Skin Surgery Center</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. </p>
+<div class="learn-more"><h4><a href="#">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+<h3><a href="contact.php">Office Locations</a></h3>
+<a href="contact.php"><img src="images/map-thumb.png" alt="map"></a>
+
+<h3><a href="forms_notices.php">Patient Forms</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. </p>
+<div class="learn-more"><h4><a href="forms_notices.php">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+<h3><a href="#">Skin Cancer Education</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. </p>
+<div class="learn-more"><h4><a href="#">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+</aside>
+</div>  <!--end wrapper-->
+
+<footer>
+<ul>
+<li>&copy;2016 Anna K. Sabo</li>
+<li>Skin Surgery Center, PS</li>
+</ul>
+</footer>
+
+</body>
+</html>

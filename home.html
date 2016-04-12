@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!--begin meta-->
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+
+<!--styles-->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600|Bitter:400,400italic,700" rel="stylesheet" type="text/css"/>  <!--google font-->
+<link href="css/flexslider.css" rel="stylesheet" type="text/css"/>  <!--flexslider css-->
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="all"/>
+
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>  <!--flexslider js-->
+<script>
+	$(document).ready(function() {
+		$('.flexslider').flexslider();
+		$("#toggle").click(function() {
+			$("#navigation").toggle();
+		});
+	});
+</script>
+
+<title>Skin Surgery Center: Home</title>
+
+</head>
+<body>
+
+<header>
+
+<a href="index.php"><img id="logo" src="images/logo.png" alt="logo"></a>
+
+<a href="index.php"><img id="logo-mobile" src="images/logo-mobile.png" alt="logo mobile"></a>
+
+<div id="portal">
+<a href="#">Patient Portal: Login</a>
+</div>  <!--end portal-->
+
+<!--start toggle -->
+<img id="toggle" src="images/toggle.png" alt="Toggle Menu">
+<!--end toggle -->
+
+</header>
+<!--MAIN NAV-->
+
+
+<nav id="navigation">
+    <ul id="main-menu">
+    	<li class="mobile"><a href="#">Patient Portal: Login</a></li>
+        <li class="sm nav"><a href="#">About Us</a>
+        	<ul class="sub-menu">
+        		<li><a href="#">Mission</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Physicians</a></li>
+                <li><a href="#">Physician Assistants</a></li>
+                <li><a href="#">Staff</a></li>
+            </ul>  <!--end sub-menu-->
+        </li>
+        <li class="lg nav"><a href="main.html">Procedures &amp; Services</a>
+        	<ul class="sub-menu">
+        		<li><a href="#">Skin Exams &amp; Biopsies</a></li>
+                <li><a href="#">Photodynamic Therapy (Blue Light)</a></li>
+                <li><a href="#">Surgical Procedures</a></li>
+            </ul>  <!--end sub-menu-->
+        </li>
+        <li class="med nav"><a href="#">Educational Info</a>
+            <ul class="sub-menu">
+        		<li><a href="#">ABCDEs of Skin Cancer</a></li>
+                <li><a href="#">Glossary of Terms</a></li>
+                <li><a href="#">Skin Cancer Myths</a></li>
+                <li><a href="#">6 Skin Types</a></li>
+                <li><a href="#">Self Examination</a></li>
+                <li><a href="#">Sun Safety</a></li>
+            </ul>  <!--end sub-menu-->
+		</li>
+        <li class="med nav"><a href="#">Patient Resources</a>
+        	<ul class="sub-menu">
+        		<li><a href="#">Patient Forms &amp; Notices</a></li>
+                <li><a href="#">Insurance Information</a></li>
+                <li><a href="#">Cancellation &amp; Missed Appointment Policy</a></li>
+            </ul>  <!--end sub-menu-->
+        </li>
+        <li class="sm nav"><a href="#">Contact Us</a>
+        	<ul class="sub-menu">
+        		<li><a href="#">Seattle</a></li>
+                <li><a href="#">Bellevue</a></li>
+            </ul>  <!--end sub-menu-->
+        </li>
+    </ul>
+</nav>
+
+<!-- Begin Flex Slider -->
+<div class="flexslider">
+<ul class="slides">
+    <li>
+        <img src="images/office.jpg" alt="office">
+        <p class="slider-caption">Image One: In a metus neque. Donec sed est metus, in cursus lectus. </p>
+        <a href="#"><button class="slider-button">Learn More</button></a>
+    </li>
+	<li>
+        <img src="images/exam.jpg" alt="exam">
+        <p class="slider-caption">Image Two: In a metus neque. Donec sed est metus, in cursus lectus. </p>
+        <a href="#"><button class="slider-button">Learn More</button></a>
+    </li>
+    <li>
+        <img src="images/form.jpg" alt="form">
+        <p class="slider-caption">Image Three: In a metus neque. Donec sed est metus, in cursus lectus. </p>
+        <a href="#"><button class="slider-button">Learn More</button></a>
+    </li>
+    <li>
+        <img src="images/microscope.jpg" alt="microscope">
+        <p class="slider-caption">Image Four: In a metus neque. Donec sed est metus, in cursus lectus. </p>
+        <a href="#"><button class="slider-button">Learn More</button></a>
+    </li>
+</ul>
+</div>
+<!-- End Flex Slider -->
+
+<div id="wrapper">
+<main>
+
+<div class="container left">
+
+<h3><a href="#">Welcome to the Skin Surgery Center</a></h3>
+
+<p>In a metus neque. Donec sed est metus, in cursus lectus. Aliquam vel aliquam ante. Curabitur non libero ut ipsum eleifend cursus. Sed rutrum sagittis pulvinar. </p>
+<p>Suspendisse potenti. Maecenas ut sapien nisi. Ut accumsan varius ornare. Sed at metus est.</p>
+
+<div class="learn-more"><h4><a href="#">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+</div>  <!--end container left-->
+
+<div class="container center">
+
+<h3><a href="">Mohs Surgery</a></h3>
+
+<a href="procedures-services.php"><img src="images/procedures.png" alt="procedures"></a>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. </p>
+
+<div class="learn-more"><h4><a href="procedures-services.php">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+</div>  <!--end container center-->
+
+<div class="container right">
+
+<h3><a href="contact.php">Office Locations</a></h3>
+
+<a href=""><img src="images/map-thumb.png" alt="map"></a>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi.  </p>
+
+<div class="learn-more"><h4><a href="contact.php">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+</div>  <!--end container right-->
+
+</main>
+</div>  <!--end wrapper-->
+
+<footer>
+<ul>
+<li>&copy;2016 Anna K. Sabo</li>
+<li>Skin Surgery Center, PS</li>
+</ul>
+</footer>
+
+</body>
+</html>
