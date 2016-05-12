@@ -10,12 +10,12 @@
 
 <!--styles-->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600|Bitter:400,400italic,700" rel="stylesheet" type="text/css"/>  <!--google font-->
-<link rel="stylesheet" href="flexslider.css" type="text/css"/>  <!--flexslider css-->
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css"/>  <!--flexslider css-->
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all"/>
 
 <!--scripts-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="js/jquery.flexslider.js"></script>  <!--flexslider js-->
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.js"></script>  <!--flexslider js-->
 <script>
 	$(document).ready(function() {
 		$('.flexslider').flexslider();
@@ -50,7 +50,7 @@
 </header>
 <!--MAIN NAV-->
 
-<?php wp_nav_menu( array('theme_location' =>'main-menu', 'container' => 'nav', 'container_id' => 'navigation',)); ?>
+<?php wp_nav_menu(array('theme_location' =>'main-menu', 'container' => 'nav', 'container_id' => 'navigation',)); ?>
 
 <!--<nav id="navigation">
     <ul id="main-menu">
