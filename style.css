@@ -16,7 +16,7 @@ Description: Theme for WEB170 Sp 2016 Site
 body {
 	font-size:100%;
 	color:#000000;
-    background-image: url("../images/grey-taupetint.png");
+    background-image: url("images/grey-taupetint.png");
     background-repeat: repeat;
 	}
 
@@ -97,6 +97,7 @@ nav ul {
 	}
 
 nav li {
+	width:16.666666%;
 	float:left;
 	list-style-type:none;
 	text-align:center;
@@ -105,7 +106,54 @@ nav li {
 	padding:0;
 	}
 	
-nav li.lg {
+nav li a {
+	font-variant:small-caps;
+	display:block
+	}
+
+#menu-main-menu li:hover {
+	background:#fcfcfb;
+	}
+
+#menu-main-menu ul.sub-menu {
+	text-align:left;
+	position:absolute;
+	display:none;
+	background-color:#C9CFA5;
+	z-index:60;
+	width:auto;
+	}
+
+#menu-main-menu > li:hover ul.sub-menu {
+	display:block;
+	border-top:4px solid #fcfcfb;
+	}
+
+#menu-main-menu ul.sub-menu li {
+	display:block;
+	width:auto;
+	float:none;
+	text-align:left;
+	font-size:.875em;
+	border-bottom:2px solid #fcfcfb;
+	}
+
+#menu-main-menu ul.sub-menu li:last-child {
+	border-bottom:none;
+	}
+
+#menu-main-menu ul.sub-menu li a {
+	display:block;
+	width:100%;
+	padding-left:20px;
+	padding-right:20px;
+	}
+
+li.nav-on   {
+	background:#fcfcfb;
+	}
+
+/*nav li.lg {
 	width:26%;
 	}
 
@@ -117,69 +165,26 @@ nav li.sm {
 	width:16%;
 	}
 
-nav li a {
-	font-variant:small-caps;
-	display:block
-	}
-
 #navigation li.mobile {
 	display:none;
 	}
 
-#main-menu li:hover {
-	background:#fcfcfb;
-	}
-
-ul.sub-menu {
-	text-align:left;
-	position:absolute;
-	display:none;
-	background-color:#C9CFA5;
-	z-index:60;
-    width:auto;
-	}
-
-#main-menu > li:hover ul.sub-menu {
-	display:block;
-	border-top:4px solid #fcfcfb;
-	}
-
-#main-menu ul.sub-menu li {
-	display:block;
-	float:none;
-	text-align:left;
-	font-size:.875em;
-	border-bottom:2px solid #fcfcfb;
-	}
-
-#main-menu .sm ul.sub-menu li a {
+#menu-main-menu .sm ul.sub-menu li a {
 	padding-left:50px;
 	padding-right:30px;
 	}
 
-#main-menu .med ul.sub-menu li a {
+#menu-main-menu .med ul.sub-menu li a {
 	padding-left:55px;
 	padding-right:30px;
 	}
 
-#main-menu .lg ul.sub-menu li a {
+#menu-main-menu .lg ul.sub-menu li a {
 	padding-left:45px;
 	padding-right:30px;
 	}
 
-#main-menu ul.sub-menu li:last-child {
-	border-bottom:none;
-	}
-
-#main-menu ul.sub-menu li a {
-	display:block;
-	width:60px;
-	width:100%;
-	}
-
-li.nav-on   {
-	background:#fcfcfb;
-}
+*/
 
 p.slider-caption {
 	z-index:50;	
