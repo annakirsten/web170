@@ -1,4 +1,4 @@
-<aside class="procedures-services">
+<aside>
 
 <?php 
 
@@ -18,9 +18,18 @@ if($post->post_parent) { //current page has parent
 
 }
 
-if(!(is_page())){
+if(!(is_page()) && !(is_single())){ //if not page.php and not single posting
 
 	echo '<h2><a href="blog">Blog</a></h2>';
+	echo '<ul>';
+	wp_list_categories(array('title_li' => '',));
+	echo '</ul>';
+
+}
+
+if(is_single()){ //if single posting
+
+	echo '<h2><a href="../../blog">Blog</a></h2>';
 	echo '<ul>';
 	wp_list_categories(array('title_li' => '',));
 	echo '</ul>';

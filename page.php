@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
 <div id="wrapper">
-<main class="inner procedures-services">
+
+<main class="inner">
 
 <div id="content">
 

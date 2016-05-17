@@ -85,7 +85,7 @@ header {
 
 nav {
 	clear:both;
-	height:50px;
+	height:auto;
 	background:#C9CFA5;
 	font-family: 'Bitter', serif;
 	overflow:hidden;
@@ -297,7 +297,7 @@ main.resources .learn-more {
 	margin-bottom:.8em;
 	}
 
-main.forms_notices pi {
+main.forms_notices p {
 	font-size:1.15em;
 	}
 
@@ -311,6 +311,31 @@ ul.doc li {
 .insurance li {
 	line-height:1.6;
 	}
+
+small a {
+	text-decoration:underline;
+}
+
+small a:hover {
+	font-weight:bold;
+}
+
+#content img.attachment-thumbnail, 
+#content img.size-thumbnail {
+	width:auto;
+	float:left;
+	margin:10px 20px 10px 0;
+}
+
+#content article.blog-excerpt {
+	clear:both;
+	overflow:hidden;
+}
+
+#content img.attachment-large, 
+#content img.size-large {
+	margin-top:20px;
+}
 
 .contact .learn-more {
 	clear:both;
@@ -579,7 +604,7 @@ a {
 		margin-right:25px;
 		}
 	
-	#main-menu > li:hover ul.sub-menu {
+	#menu-main-menu > li:hover ul.sub-menu {
 		display:none;
 		}
 	
