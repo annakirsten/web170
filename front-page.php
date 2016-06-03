@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-<div id="wrapper">
-<main>
-
 <div id="content">
 
 <!-- Begin Flex Slider -->
@@ -63,12 +60,12 @@
 
 </div>  <!--end widget container right-->
 
-</div> <!--end content-->
-
 </main>
 
 <p>front-page.php</p>
 
 </div>  <!--end wrapper-->
+
+</div> <!--end content-->
 
 <?php get_footer(); ?>

@@ -1,5 +1,7 @@
 <aside>
 
+<div id="sidebar">
+
 <?php 
 
 if($post->post_parent) { //current page has parent
@@ -37,6 +39,19 @@ if(is_single()){ //if single posting
 }
 
 ?>
+
+<div id="quotation">
+<?php 
+	if (get_post_meta($post->ID, 'quotation', true)){ //check for quotation custom field ?>
+		<blockquote><?php echo get_post_meta($post->ID, 'quotation', true) ?></blockquote>
+	<?php } ?>
+</div> <!--end quotation-->
+
+<div id="dynamic-widgets">
+<?php dynamic_sidebar(); ?>
+</div>
+
+</div> <!--end sidebar-->
 
 <!--<h3><a href="#">About Skin Surgery Center</a></h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. </p>
