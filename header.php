@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 
-<!--begin meta-->
-<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+<title><?php get_my_title_tag(); ?></title>
 
-<title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
+<!--begin meta-->
+<meta name="description" content="<?php echo get_the_excerpt(); //display page excerpt ?>" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
 
 <!--styles-->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600|Bitter:400,400italic,700" rel="stylesheet" type="text/css"/>  <!--google font-->
